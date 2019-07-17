@@ -13,6 +13,8 @@ storiesOf('Buttons', module)
 
   .add('Examples', () => `<button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-rfi">Request for Info</button>
+<button type="button" class="btn btn-degree">Degree Buttons</button>
 <button type="button" class="btn btn-success">Success</button>
 <button type="button" class="btn btn-danger">Danger</button>
 <button type="button" class="btn btn-warning">Warning</button>
