@@ -1,22 +1,32 @@
-import { document, console } from 'global';
 import { storiesOf } from '@storybook/html';
 
-storiesOf('Kitchen Sink', module)
+storiesOf('Overview', module)
   .addParameters({
+    happo: false,
     readme: {
-      sidebar: [
-        `# Kitchen Sink
-The 'kitchen sink' page is an all-in-one implementation of all UI kit features, rendered in-context like a regular production web page. This makes for an excellent platform to perform visual regression tests on the UI kit as well as perform any integration tests on the ui features.`,
-      ],
+      sidebar: `
+
+`,
     },
   })
   .add(
-    'bootstrap4',
+    'Read Me',
+    () => `<h1>ASU Web Standards Bootstrap 4 Theme</h1>
+
+<p>This Storybook site demonstrates all the available components, markup, and styles that are available in this CMS-agnostic implementation of the ASU Web Standards set forth by the <a href="https://brandguide.asu.edu/">ASU Marketing Hub</a>. This is not the replacement for a proper style guide website that documents the theme for end-users and web developers. That is coming soon! This is an example of the live development environment used by the theme maintainers to scan the theme for Accessibility issues and to test and validate proposed changes to the Web Standards styles.</p>
+
+<p>For more information on how these styles are created and how to use them, head on over to the <a href="https://github.com/gios-asu/asu-web-standards-bootstrap4/">project GitHub repository</a>. If you have any questions, <a href="https://github.com/gios-asu/asu-web-standards-bootstrap4/issues">post an issue</a>.</p>
+
+<p>Don\'t forget to view the Accessibility Test Results in the service panel to the right or below!</p>`
+  )
+
+  .add(
+    'Kitchen Sink Overview',
     () => `<!-- HTML Only File for Kitchen Sink v4 Storybook Story. For reference only. -->
     <a name="top"></a>
     <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg mb-3">
       <div class="container">
-        <a class="navbar-brand" href="#">Bootstrap 4 Kitchen Sink</a>
+        <a class="navbar-brand" href="#">Patience, please! Accessibility scan must complete before you can scroll!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

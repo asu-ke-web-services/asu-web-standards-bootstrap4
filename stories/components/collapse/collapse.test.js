@@ -1,29 +1,28 @@
-describe('Colors', () => {
-  it('text colors visually look correct', async () => {
+describe('Collapse', () => {
+  it('collapse example visually look correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=utilities-colors--colors-text');
+    await page.goto('http://localhost:9009/iframe.html?id=collapse--examples');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
     expect(image).toMatchImageSnapshot();
   });
 
-  it('anchor colors visually look correct', async () => {
+  it('collapse multiple visually look correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=utilities-colors--colors-anchors');
+    await page.goto('http://localhost:9009/iframe.html?id=collapse--collapse-multiple');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
     expect(image).toMatchImageSnapshot();
   });
 
-  it('background colors visually look correct', async () => {
+  it('collapse accordion visually look correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=utilities-colors--background-colors');
+    await page.goto('http://localhost:9009/iframe.html?id=collapse--collapse-accordion');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
     expect(image).toMatchImageSnapshot();
   });
-
 });
