@@ -23,7 +23,7 @@
     "@storybook/addon-google-analytics": "^5.1.9",
     "@storybook/addon-jest": "^5.1.9",
     "@storybook/addon-viewport": "^5.1.9",
-    "@storybook/html": "^5.1.9",
+    "@storybook/html": "^5.3.18",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.1.0",
     "bootstrap": "^4.3.1",
