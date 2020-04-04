@@ -1,0 +1,57 @@
+// ASU Brand Standard Colors
+// Reference: https://hub.asu.edu/brand-hq/brand-standards/color-palette
+$maroon: #8c1d40;
+$gold: #ffc627;
+$blue: #00a3e0;
+$green: #78be20;
+$orange: #ff7f32;
+$gray: #5c6670;
+$black: #000000;
+$white: #ffffff;
+
+// Plus these additional colors from ASU Brand Guide: https://brandguide.asu.edu/Executing-the-brand/Web-and-mobile/ui-kit
+// need Unity Group discussion: these 'alt' colors need review with Hub
+$asu-success: #148e4b;
+$asu-info: #008ed6;
+$asu-warning: #ec5937;
+$asu-danger: #bfe319;
+$asu-gray: #dbdbdb; // used for 'secondary' color variant (e.g. btn-secondary)
+$asu-light: #fafafa;
+$asu-dark: #2a2a2a; // used for 'body' text
+
+// Bootstrap modifier colors
+$primary: $maroon;
+$secondary: $asu-gray;
+$success: $asu-success;
+$info: $asu-info;
+$warning: $asu-warning;
+$danger: $asu-danger;
+$asu-rfi: $gold;
+$asu-program: $blue;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    'maroon': $maroon,
+    'gold': $gold,
+    'blue': $blue,
+    'green': $green,
+    'orange': $orange,
+    'gray': $gray,
+    'black': $black,
+    'white': $white,
+    'asu-success': $asu-success,
+    'asu-info': $asu-info,
+    'asu-warning': $asu-warning,
+    'asu-danger': $asu-danger,
+    'asu-gray': $asu-gray,
+    'asu-light': $asu-light,
+    'asu-dark': $asu-dark,
+  ),
+    $colors
+);
+
+$theme-colors: (
+  'rfi': $asu-rfi,
+  'program': $asu-program,
+);
